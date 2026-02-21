@@ -1,3 +1,6 @@
+# Build Command:
+# docker build -t blk-hacking-ind-sagarraj-roul .
+
 FROM python:3.11-slim
 
 WORKDIR /app

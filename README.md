@@ -45,17 +45,22 @@ http://localhost:5477/docs
 ## 🐳 Run Docker Locally
 ### Build docker
 ```bash
-docker build -t jarvisagar/fastapi-app:latest .
+docker build -t blk-hacking-ind-sagarraj-roul .
 ```
 
 ## Run docker container
 ```bash
-docker run -d -p 5477:5477 --name fastapi-container jarvisagar/fastapi-app:latest
+docker run -d -p 5477:5477 blk-hacking-ind-sagarraj-roul
 ```
-## Acees application locally
+## Access application locally
 ```bash
 http://localhost:5477
 http://localhost:5477/docs
 ```
 
+## 🐳 Run Docker directly
+```bash
+docker pull jarvisagar/blk-hacking-ind-sagarraj-roul
+docker run -d -p 5477:5477 jarvisagar/blk-hacking-ind-sagarraj-roul
+```
 

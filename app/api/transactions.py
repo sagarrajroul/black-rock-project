@@ -45,11 +45,11 @@ def validate_transactions(request: TransactionValidateRequest):
                         message="negative amounts are not allowed"
                     ))
             elif seen_before.get(transaction.date) == transaction.amount:
-                invalid.append(invalid.append(TransactionInvalidResponse(
+                invalid.append(TransactionInvalidResponse(
                         date=transaction.date,
                         amount=transaction.amount,
                         message="Duplicate transactions"
-                    )))
+                    ))
             else:
                 seen_before[transaction.date] = transaction.amount
                 valid.append(transaction)
