@@ -10,6 +10,7 @@
 ---
 
 ## 📁 Project Structure
+```text
 fastapi-app/
 │
 ├── app/
@@ -18,14 +19,20 @@ fastapi-app/
 │ ├── models/
 │ ├── utils/
 │ ├── api/
-│ │ ├── health.py
-│ │ └── users.py
+│ │ ├── returns.py
+│ │ └── performance.py
+│ │ └── transactions.py
+│
+├── app/
+│ ├── test_performance.py
+│ ├── test_transactions.py
+│ ├── test_returns.py
 │
 ├── requirements.txt
 ├── Dockerfile
 ├── .dockerignore
 └── README.md
-
+```
 ## 🚀 How to Run Locally
 
 ```bash
@@ -40,6 +47,13 @@ http://localhost:5477
 ## 🚀 Access swagger
 ```bash
 http://localhost:5477/docs
+```
+## 🚀 How to run TestCases Locally
+```tesxt
+make sure to be in the main folder before run
+```
+```bash
+pytest
 ```
 
 ## 🐳 Run Docker Locally
