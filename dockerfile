@@ -16,4 +16,4 @@ COPY . .
 
 # expose the port and run the application
 EXPOSE 5477
-CMD ["uvicorn", "app:main.app","--host","0.0.0.0","--port","5477"]
+CMD ["uvicorn", "app.main:app","--host","0.0.0.0","--port","5477"]
